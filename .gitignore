@@ -1,0 +1,26 @@
+
+src/client/CSClient/CSClient.vcxproj
+src/client/CSClient/CSClient.vcxproj.filters
+src/client/CSClient/Debug/CSClient.log
+src/server/CS server/Debug/CSClient.pdb
+*.tlog
+src/client/CSClient/Debug/io_service_pool.obj
+src/client/CSClient/Debug/main.obj
+src/client/CSClient/Debug/tcp_message.obj
+src/client/CSClient/Debug/vc120.idb
+src/client/CSClient/Debug/vc120.pdb
+src/server/CS server/CS server.sdf
+src/server/CS server/CS server.v12.suo
+src/server/CS server/CS server/CS server.vcxproj
+src/server/CS server/CS server/CS server.vcxproj.filters
+src/server/CS server/CS server/Debug/CS server.log
+src/server/CS server/CS server/Debug/io_service_pool.obj
+src/server/CS server/CS server/Debug/main.obj
+src/server/CS server/CS server/Debug/tcp_message.obj
+src/server/CS server/CS server/Debug/vc120.idb
+src/server/CS server/CS server/Debug/vc120.pdb
+src/server/CS server/Debug/CS server.exe
+src/server/CS server/Debug/CS server.ilk
+src/server/CS server/Debug/CS server.pdb
+src/server/CS server/Debug/CSClient.exe
+src/server/CS server/Debug/CSClient.ilk
