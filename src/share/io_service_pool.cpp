@@ -28,6 +28,7 @@ io_service_pool::ios_type& io_service_pool::get()
 // 非阻塞事件循环
 void io_service_pool::start()
 {
+	// 线程组没线程时创建线程
 	if (m_threads.size() > 0)
 	{
 		return;

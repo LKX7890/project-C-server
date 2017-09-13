@@ -30,7 +30,7 @@ public:
 
 private:
 
-	queue_type m_queue;		// 队列
+	queue_type m_queue;		// (泛型工作)工作队列
 	mutex_type m_mutex;		// 互斥量
 	condition_type m_hasJob;// 条件变量
 	bool m_stop_flag;

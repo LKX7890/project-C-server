@@ -10,13 +10,13 @@
 using namespace std;
 
 template<typename Queue>
-class worker
+class worker				// 工作工厂，处理队列里所有工作
 {
 public:
 
 	typedef Queue queue_type;
 	typedef typename Queue::Job_type job_type;
-	typedef boost::funciton<bool(job_type &)> func_type;
+	typedef boost::funciton<bool(job_type &)> func_type;	// 函数类型 <返回类型 (形参)>  func_type XXXfunc = YYY;
 
 public:
 
@@ -36,8 +36,9 @@ public:
 	void stop();
 private:
 
-	void do_work();						// 循环处理工作队列函数
+	void do_work();						// 循环处理工作队列m_queue函数
 private:
+
 	queue_type &m_queue;				// 关联任务队列（不可拷贝）
 	func_type m_func;					// 回调处理函数
 	int m_nThreadNum;					// 线程数
@@ -103,7 +104,7 @@ void worker<Queue>::start()
 template<typename Queue>
 void worker::run()
 {
-	start();
+	this->start();
 	m_threads.join_all();
 }
 
