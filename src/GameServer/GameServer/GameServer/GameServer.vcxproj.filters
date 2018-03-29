@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="protocol">
+      <UniqueIdentifier>{cd711bcb-5134-45e5-8cf5-af60b3c67711}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{76d2f74a-090a-4088-a7e6-41ace9621d1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{e255f861-442e-4213-8655-36e0d3e93c34}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="protocal\ack_code.h">
+      <Filter>protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="protocal\packet.h">
+      <Filter>protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="protocal\packet_type.h">
+      <Filter>protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ClientNetwork.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dllexport.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\io_service_pool.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\job_queue.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\msg_def.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\net_comm.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\packet_factory.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\safe_atom.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\safe_buffer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\safe_circular_buffer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\safe_container.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\safe_map.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\safe_singleton.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\safe_stack_buffer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\safe_vector.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\scheduler.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\serial_packet.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ServerNetwork.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tcp_buffer.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tcp_client.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tcp_comm.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tcp_handler.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tcp_message.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tcp_server.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tcp_session.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\thread_header.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\worker.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MainApp.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MServer.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="source\PacketProc.h">
+      <Filter>source</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="include\ClientNetwork.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\io_service_pool.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\net_comm.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\ServerNetwork.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\tcp_client.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\tcp_message.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\tcp_server.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\tcp_session.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Main.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MainApp.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MServer.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\PacketProc.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

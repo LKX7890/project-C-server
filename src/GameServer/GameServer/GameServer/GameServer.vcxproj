@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2B836247-38D7-48CA-828D-C9114D35DD2C}</ProjectGuid>
+    <RootNamespace>GameServer</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\..\..\..\..\..\boost_1_66_0;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\..\..\..\..\..\boost_1_66_0;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="include\ClientNetwork.h" />
+    <ClInclude Include="include\dllexport.h" />
+    <ClInclude Include="include\io_service_pool.hpp" />
+    <ClInclude Include="include\job_queue.hpp" />
+    <ClInclude Include="include\msg_def.hpp" />
+    <ClInclude Include="include\net_comm.hpp" />
+    <ClInclude Include="include\packet_factory.h" />
+    <ClInclude Include="include\safe_atom.hpp" />
+    <ClInclude Include="include\safe_buffer.h" />
+    <ClInclude Include="include\safe_circular_buffer.h" />
+    <ClInclude Include="include\safe_container.h" />
+    <ClInclude Include="include\safe_map.hpp" />
+    <ClInclude Include="include\safe_singleton.hpp" />
+    <ClInclude Include="include\safe_stack_buffer.h" />
+    <ClInclude Include="include\safe_vector.h" />
+    <ClInclude Include="include\scheduler.hpp" />
+    <ClInclude Include="include\serial_packet.h" />
+    <ClInclude Include="include\ServerNetwork.h" />
+    <ClInclude Include="include\tcp_buffer.hpp" />
+    <ClInclude Include="include\tcp_client.hpp" />
+    <ClInclude Include="include\tcp_comm.hpp" />
+    <ClInclude Include="include\tcp_handler.hpp" />
+    <ClInclude Include="include\tcp_message.hpp" />
+    <ClInclude Include="include\tcp_server.hpp" />
+    <ClInclude Include="include\tcp_session.hpp" />
+    <ClInclude Include="include\thread_header.hpp" />
+    <ClInclude Include="include\worker.h" />
+    <ClInclude Include="protocal\ack_code.h" />
+    <ClInclude Include="protocal\packet.h" />
+    <ClInclude Include="protocal\packet_type.h" />
+    <ClInclude Include="source\MainApp.h" />
+    <ClInclude Include="source\MServer.h" />
+    <ClInclude Include="source\PacketProc.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="include\ClientNetwork.cpp" />
+    <ClCompile Include="include\io_service_pool.cpp" />
+    <ClCompile Include="include\net_comm.cpp" />
+    <ClCompile Include="include\ServerNetwork.cpp" />
+    <ClCompile Include="include\tcp_client.cpp" />
+    <ClCompile Include="include\tcp_message.cpp" />
+    <ClCompile Include="include\tcp_server.cpp" />
+    <ClCompile Include="include\tcp_session.cpp" />
+    <ClCompile Include="source\Main.cpp" />
+    <ClCompile Include="source\MainApp.cpp" />
+    <ClCompile Include="source\MServer.cpp" />
+    <ClCompile Include="source\PacketProc.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
